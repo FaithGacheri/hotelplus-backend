@@ -29,11 +29,13 @@ room10 = Room.create(room_type: "suite", room_no:10, hotel_id:1)
 puts "Creating hotel..."
 hotel1 = Hotel.create(name: "Hotel+", location: "Westlands", description:"5star-allsuites")
 hotel2 = Hotel.create(name: "Sarova", location: "Parklands", description:"4star-halfsuites")
-# hotel3 = Hotel.create(name: "Weston", location: "Langata", description:"3star-suite")
-# hotel4 = Hotel.create(name: "Verona", location: "Ruiru", description:"1star-suite")
+hotel3 = Hotel.create(name: "Weston", location: "Langata", description:"3star-suite")
+hotel4 = Hotel.create(name: "Verona", location: "Ruiru", description:"1star-suite")
 
 puts "booking hotel..."
 hotel1 = Booking.create(user_name: "Elon", email: "12@mail.com",room_id:1)
-hotel2 = Booking.create(user_name: "Neon", email: "34@mail.com",room_id:1)
+hotel2 = Booking.create(user_name: "Neon", email: "34@mail.com",room_id:2)
+hotel3 = Booking.create(user_name: "Elon", email: "12@mail.com",room_id:3)
+hotel4 = Booking.create(user_name: "Neon", email: "34@mail.com",room_id:4)
 
 puts "✅ Done seeding!"
