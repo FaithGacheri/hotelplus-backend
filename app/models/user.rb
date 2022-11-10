@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
     has_many :bookings
-    belongs_to :room
+    has_many :rooms, through: :bookings
 end

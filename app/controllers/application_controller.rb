@@ -2,31 +2,38 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   # Add your routes here
-  get "/" do
-    hotel = Hotel.all
-    hotel.to_json
-  end
 
-  get "/booking" do
+  get "/bookings" do
     booking = Booking.all
     booking.to_json
   end
 
-  get "/hotel" do
-    booking = Booking.all
-    booking.to_json
-  end
+  # get "/hotels" do
+  #   hotel = Hotel.all
+  #   hotel.to_json
+  # end
   
 
-  get "/room" do
-    booking = Booking.all
-    booking.to_json
+  get "/rooms" do
+    room = Room.all
+    room.to_json
   end
   
-  get "/user" do
-    booking = Booking.all
-    booking.to_json
+  get "/users" do 
+    user = User.all
+    user.to_json
   end
+
+  # post '/rooms' do
+  #   room = Room.create_rooms(params)
+  #   room.to_json
+  # end
+
+  # post '/rooms' do
+  #   room = Room.create_rooms(params)
+  #   room.to_json
+  # end
+
 
 
 end
