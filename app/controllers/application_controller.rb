@@ -39,6 +39,10 @@ class ApplicationController < Sinatra::Base
     hotels.to_json
   end
 
+  post '/users' do
+    users = User.create_users(params)
+    users.to_json
+  end
 
 end
 
