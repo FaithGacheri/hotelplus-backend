@@ -49,5 +49,17 @@ class ApplicationController < Sinatra::Base
     booking.to_json
   end
 
+  # update '/bookings/:id' do
+  #   booking = Booking.update_bookings(params)
+  #   booking.to_json
+  # end
+
+  patch '/bookings/:id' do
+    booking = Booking.patch_bookings(params)
+    booking.to_json
+  end
+
+  
+
 end
 
