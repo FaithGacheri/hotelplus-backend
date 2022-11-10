@@ -15,4 +15,13 @@ class Booking < ActiveRecord::Base
             room_id: params[:room_id]
         )
     end
+
+
+    def self.delete_bookings(params)
+        booking = Booking.find(params)
+        booking.destroy
+     end
+
+
+     
 end
