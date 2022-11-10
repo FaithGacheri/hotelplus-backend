@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2022_11_09_174428) do
   end
 
   create_table "hotels", force: :cascade do |t|
+    t.string "image_url"
     t.string "name"
     t.string "location"
     t.string "description"

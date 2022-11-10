@@ -34,6 +34,10 @@ class ApplicationController < Sinatra::Base
     booking.to_json
   end
 
+  post '/hotels' do
+    hotels = Hotel.create_hotels(params)
+    hotels.to_json
+  end
 
 
 end

@@ -27,10 +27,10 @@ room9 = Room.create(room_type: "presidential", room_no:9, hotel_id:1)
 room10 = Room.create(room_type: "suite", room_no:10, hotel_id:2)
 
 puts "Creating hotel..."
-hotel1 = Hotel.create(name: "Hotel+", location: "Westlands", description:"5star-allsuites")
-hotel2 = Hotel.create(name: "Sarova", location: "Parklands", description:"4star-halfsuites")
-hotel3 = Hotel.create(name: "Weston", location: "Langata", description:"3star-suite")
-hotel4 = Hotel.create(name: "Verona", location: "Ruiru", description:"1star-suite")
+hotel1 = Hotel.create(image_url:"",name: "Hotel+", location: "Westlands", description:"5star-allsuites")
+hotel2 = Hotel.create(image_url:"",name: "Sarova", location: "Parklands", description:"4star-halfsuites")
+hotel3 = Hotel.create(image_url:"",name: "Weston", location: "Langata", description:"3star-suite")
+hotel4 = Hotel.create(image_url:"",name: "Verona", location: "Ruiru", description:"1star-suite")
 
 puts "booking hotel..."
 booking1 = Booking.create(user_name: "Elon", email: "12@mail.com",room_id:1,hotel_id:1,user_id:1)
