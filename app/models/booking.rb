@@ -28,7 +28,6 @@ class Booking < ActiveRecord::Base
     #     booking.update(email: params[:email],description: params[:description])
     # end
 
-
     def self.patch_bookings(params)
         booking = Booking.find(params[:id])
         booking.update(email: params[:email])
