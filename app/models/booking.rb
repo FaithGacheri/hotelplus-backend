@@ -34,5 +34,4 @@ class Booking < ActiveRecord::Base
         booking.to_json
     end
 
-     
 end
