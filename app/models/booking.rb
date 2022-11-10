@@ -21,7 +21,19 @@ class Booking < ActiveRecord::Base
         booking = Booking.find(params)
         booking.destroy
      end
+ 
 
+    #  def self.update_bookings(params)
+    #     booking = Booking.find(params[:id])
+    #     booking.update(email: params[:email],description: params[:description])
+    # end
+
+
+    def self.patch_bookings(params)
+        booking = Booking.find(params[:id])
+        booking.update(email: params[:email])
+        booking.to_json
+    end
 
      
 end
