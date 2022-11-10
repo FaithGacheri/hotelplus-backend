@@ -8,10 +8,10 @@ class ApplicationController < Sinatra::Base
     booking.to_json
   end
 
-  # get "/hotels" do
-  #   hotel = Hotel.all
-  #   hotel.to_json
-  # end
+  get "/hotels" do
+    hotel = Hotel.all
+    hotel.to_json
+  end
   
 
   get "/rooms" do
@@ -24,15 +24,15 @@ class ApplicationController < Sinatra::Base
     user.to_json
   end
 
-  # post '/rooms' do
-  #   room = Room.create_rooms(params)
-  #   room.to_json
-  # end
+  post '/rooms' do
+    room = Room.create_rooms(params)
+    room.to_json
+  end
 
-  # post '/rooms' do
-  #   room = Room.create_rooms(params)
-  #   room.to_json
-  # end
+  post '/bookings' do
+    booking = Booking.create_bookings(params)
+    booking.to_json
+  end
 
 
 
