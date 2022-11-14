@@ -74,7 +74,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     
 ## Live Heroku Link.
 
-    https://hotelplus-backend-api.herokuapp.com/rooms
+    https://hotelplus-backend-api.herokuapp.com
+    Use these addresses to fetch the specific data
+    [api-address]/users -get all users
+    [api-address]/hotels -get all hotels
+    [api-address]/rooms -get all rooms
+    [api-address]/bookings -get all bookings
+    [api-address]/users -add new user
+    
 
 Copyright (c) 2022 Faith Gacheri and others...
 
